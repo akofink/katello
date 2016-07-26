@@ -1,0 +1,5 @@
+---
+hammer_ruby_version: 2.3.1
+hammer_host: 'http://katello-devel.example.com:3000/'
+hammer_username: admin
+hammer_password: changeme

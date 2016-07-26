@@ -92,3 +92,10 @@ boxes:
   pipeline-capsule-3.1-centos7:
     box: centos7
     memory: 3072
+
+  hammer-devel-centos7:
+    box: centos7
+    memory: 2048
+    ansible:
+      playbook: 'playbooks/hammer-devel.yml'
+      group: 'hammer-devel'

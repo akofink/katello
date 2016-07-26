@@ -1,0 +1,3 @@
+---
+- name: 'Clone the hammer-cli repository'
+  git: repo=https://github.com/theforeman/hammer-cli.git dest=~/hammer-cli update=no

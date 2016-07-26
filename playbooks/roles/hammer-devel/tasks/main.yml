@@ -1,0 +1,7 @@
+---
+- include: roles/common/tasks/git.yml
+- include: roles/common/tasks/rbenv.yml
+- include: hammer_cli.yml
+- include: hammer_cli_foreman.yml
+- include: hammer_cli_foreman_tasks.yml
+- include: hammer_cli_katello.yml
