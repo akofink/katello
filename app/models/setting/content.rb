@@ -60,7 +60,9 @@ class Setting::Content < Setting
                                               "such as virtual machines and DNS records may also be deleted."),
                  false, N_('Delete Host upon unregister')),
         self.set('register_hostname_fact', N_("When registering a host via subscription-manager, force use the specified fact (in the form of 'fact.fact')"),
-                 '', N_('Subscription manager name registration fact'), nil)
+                 '', N_('Subscription manager name registration fact'), nil),
+        self.set('erratum_install_batch_size', N_("Force pulp to install errata in batches. Set to -1 to disable."),
+                 20, N_('Erratum Install Batch Size'))
       ].each { |s| self.create! s.update(:category => "Setting::Content") }
     end
     true
